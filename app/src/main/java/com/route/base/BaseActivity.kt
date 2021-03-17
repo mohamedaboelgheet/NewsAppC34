@@ -1,5 +1,6 @@
 package com.route.islamigsun.base
 
+import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -12,6 +13,13 @@ open class BaseActivity :AppCompatActivity() {
     }
     fun makeToast(messageId:Int){
         Toast.makeText(this,messageId, Toast.LENGTH_LONG).show()
+    }
+
+    fun showProgressDialoge(message:String){
+      val dialoge =   ProgressDialog(this)
+        dialoge.setCancelable(false)
+        dialoge.setMessage(message)
+        dialoge.show()
     }
 
     // snack bar

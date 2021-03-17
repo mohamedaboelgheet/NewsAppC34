@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NewsAppC34</string>
+    <string name="retry">retry</string>
+    <string name="ok">ok</string>
 </resources>
