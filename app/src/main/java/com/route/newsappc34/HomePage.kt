@@ -29,6 +29,7 @@ class HomePage : BaseActivity(),TabLayout.OnTabSelectedListener {
         setContentView(R.layout.activity_home_page)
         setUpViews()
         changedFunctionName()
+        //added comment in swipe to delete branch
 
     }
 
