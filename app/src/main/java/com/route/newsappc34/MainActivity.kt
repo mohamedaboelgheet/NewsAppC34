@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
                 .postDelayed({
                     gotoHomeActivity()
                 },2000)
+        //added comment
     }
 
     private fun gotoHomeActivity() {

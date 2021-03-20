@@ -28,7 +28,7 @@ class HomePage : BaseActivity(),TabLayout.OnTabSelectedListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
         setUpViews()
-        getSources()
+        changedFunctionName()
 
     }
 
@@ -40,7 +40,7 @@ class HomePage : BaseActivity(),TabLayout.OnTabSelectedListener {
         recyclerView.adapter=adapter
     }
 
-    fun getSources(){
+    fun changedFunctionName(){
         ApiManager.getApis()
             .getNewsSources(Constants.apiKey,
             "en",country = "us")
